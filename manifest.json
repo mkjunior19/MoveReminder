@@ -1,0 +1,111 @@
+{
+  "manifestVersion": 1,
+  "name": "Reminder to move!",
+  "description": "This tile reminds you to move every 45 minutes. Plus it has 6 tips on how to be active at work. ",
+  "version": 1,
+  "versionString": "1",
+  "author": "mkjunior19",
+  "organization": "",
+  "contactEmail": "",
+  "tileIcon": {
+    "46": "icons/tileIcon.png"
+  },
+  "icons": {},
+  "refreshIntervalMinutes": 45,
+  "tileTheme": {
+    "base": "d94c66",
+    "highlight": "ea5475",
+    "lowlight": "c64763",
+    "secondary": "a3919c",
+    "highContrast": "bf455f",
+    "muted": "993344"
+  },
+  "resources": [
+    {
+      "url": "http://www.heart.org/idc/groups/heart-public/@wcm/@global/documents/rssfeed/t1_1.xml",
+      "style": "Simple",
+      "content": {
+        "_1_rsschanneltitle": "/rss/channel/title"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "layout": "MSBand_ScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Tip #1"
+        },
+        {
+          "elementId": "2",
+          "value": "Stand while talking on the telephone."
+        }
+      ]
+    },
+    {
+      "layout": "MSBand_ScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Tip #2"
+        },
+        {
+          "elementId": "2",
+          "value": "Take the stairs instead of the elevator. Or get off a few floors early and take the stairs the rest of the way."
+        }
+      ]
+    },
+    {
+      "layout": "MSBand_ScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Tip #3"
+        },
+        {
+          "elementId": "2",
+          "value": "Walk around your building for a break during the work day or during lunch."
+        }
+      ]
+    },
+    {
+      "layout": "MSBand_ScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Tip #4"
+        },
+        {
+          "elementId": "2",
+          "value": "Brainstorm project ideas with a coworker while taking a walk."
+        }
+      ]
+    },
+    {
+      "layout": "MSBand_ScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Tip #5"
+        },
+        {
+          "elementId": "2",
+          "value": "Walk down the hall to speak with someone rather than using the telephone"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "condition": "true",
+      "title": "Time to move!",
+      "body": ""
+    }
+  ]
+}
